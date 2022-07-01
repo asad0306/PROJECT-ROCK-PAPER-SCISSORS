@@ -1,13 +1,14 @@
-const computerPlay = "Rock";
-const computerPlay1 = "Paper";
-const computerPlay2 = "Scissors";
+const rock = "Rock";
+const paper = "Paper";
+const svissors = "Scissors";
 
-function computerPla () {
-    if (computerPlayS) {
+function computerPlay () {
+    if (rock) {
         console.log("Rock");
-    } else if (computerPlay1) {
+    } else if (paper) {
         console.log("Paper");
     } else {
         console.log("Scissors");
     }
 }
+computerPlay();
