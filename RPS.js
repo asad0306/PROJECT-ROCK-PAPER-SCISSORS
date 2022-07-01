@@ -1,9 +1,6 @@
-const rock = "Rock";
-const paper = "Paper";
-const svissors = "Scissors";
 
 function computerPlay () {
-    if (rock) {
+     if (rock) {
         console.log("Rock");
     } else if (paper) {
         console.log("Paper");
@@ -12,8 +9,12 @@ function computerPlay () {
     }
 }
 
-function playRound(playerSelection, computerSelection) {
+const rock = "Rock";
+const paper = "Paper";
+const scissors = "Scissors";
 
+function playRound(playerSelection, computerSelection) {
+    return "You lost the game."
 }
 const playerSelection = "rock"
 const computerSelection = computerPlay(); 
