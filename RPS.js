@@ -1,21 +1,36 @@
+const choices  = ["rock","paper","scissors"]
 
-function computerPlay () {
-     if (rock) {
-        console.log("Rock");
-    } else if (paper) {
-        console.log("Paper");
-    } else {
-        console.log("Scissors");
+function game () {
+    playRound();
+}
+
+function playRound() {
+    const playerSelection = playerChoice();
+    const computerSelection = computerChoice();
+}
+
+function playerChoice(){
+    let input = prompt("Type Rock, Paper, or Scissors");
+    while (input == null) {
+    input = prompt("Type Rock, Paper, or Scissors");
+}
+    input = input.toLowerCase(); 
+    let check = validateInput(input);
+    if (check == true) {
+        console.log(input);
     }
 }
 
-const rock = "Rock";
-const paper = "Paper";
-const scissors = "Scissors";
-
-function playRound(playerSelection, computerSelection) {
-    return "You lost the game."
+function computerChoice () {
+    return choices[Math.floor(Math.random()*choices.length)]
 }
-const playerSelection = "rock"
-const computerSelection = computerPlay(); 
-console.log(playRound(playerSelection, computerSelection));
+
+function validateInput(choice) {
+    if (choices.includes(choice)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+game();
