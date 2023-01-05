@@ -4,15 +4,37 @@
     <meta charset="UTF-8">          
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="RPS.js"></script>
-    <title>Document</title>
+     <title>Rock Papaer Scissors</title>
     <link rel="stylesheet" href="main.css"> 
+    <script src="RPS.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Rock Paper Scissors</h1>
-<button onclick="game()">Start game</button>
-</div>
+    <div class="score">
+        <h1 class="ties">Ties: 0</h1>
+    </div>
+    <div class="winnerDiv">
+        <h1 class="winner"></h1>
+        <button class="reset" onclick="resetgame()">Play Again?</button>
+    </div>
+    <div class="playerSection">
+        <h3 class="playerChoice"></h3>
+        <h3 class="playerScore">Score: 0</h3>
+        <div class="playerImgs">
+            <img src="/home/jaan/Qais/THE ODIN PROJECT/PROJECT-ROCK-PAPER-SCISSORS/imgs/rock.png" alt="Rock" class="pImg" id="rock">
+            <img src="/home/jaan/Qais/THE ODIN PROJECT/PROJECT-ROCK-PAPER-SCISSORS/imgs/paper.png" alt="Paper" class="pImg" id="paper">
+            <img src="/home/jaan/Qais/THE ODIN PROJECT/PROJECT-ROCK-PAPER-SCISSORS/imgs/scissors.png" alt="Scissors" class="pImg" id="scissors">
+        </div>
+    </div>
 
+    <div class="computerSection">
+        <h3 class="computerChoice"></h3>
+        <h3 class="computerScore">Score: 0</h3>
+        <div class="computerImgs">
+            <img src="/home/jaan/Qais/THE ODIN PROJECT/PROJECT-ROCK-PAPER-SCISSORS/imgs/rock.png" alt="Rock" class="rock">
+            <img src="/home/jaan/Qais/THE ODIN PROJECT/PROJECT-ROCK-PAPER-SCISSORS/imgs/paper.png" alt="Paper" class="paper">
+            <img src="/home/jaan/Qais/THE ODIN PROJECT/PROJECT-ROCK-PAPER-SCISSORS/imgs/scissors.png" alt="Scissors" class="scissors">
+        </div>
+    </div>
+    
 </body>
 </html>
